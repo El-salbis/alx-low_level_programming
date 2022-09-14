@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
-* _abs - gives the absolute value
-* of an integer.
+* print_last_digit - Prints the last digit
+* of a number.
 *
 * @n: input number as an integer.
 *
-* Return: absolute value
+* Return: last digit.
 */
-int _abs(int n)
-	{
-	if (n >= 0)
-	{
-	return (n);
-	}
+int print_last_digit(int n)
+{
+	int l;
+
+	l = n % 10;
+	if (l < 0)
+		{
+		_putchar(-l + 48);
+	return (-l);
+		}
 	else
 	{
-	return (n * -1);
+	_putchar(l + 48);
+	return (l);
 	}
 }
